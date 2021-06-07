@@ -2,7 +2,10 @@ import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { from, Observable } from "rxjs";
 
-
+/*
+The test service just creates an observable from a promise
+that echoes what was submitted.
+*/
 @Injectable(
     { providedIn: 'root'}
 )

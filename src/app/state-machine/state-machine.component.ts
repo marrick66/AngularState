@@ -16,6 +16,8 @@ export class StateMachineComponent implements OnInit {
   values$: Observable<string>
   service: any
 
+  //This will create and start the state machine, and subscribe to
+  //any events that occur:
   constructor() {
     this.service = interpret(appMachine)
     this.service.start()
@@ -25,8 +27,9 @@ export class StateMachineComponent implements OnInit {
       }))
    }
 
+  //When started, this will send a start event to the state machine:
   ngOnInit(): void {
-    this.service.send(machineModel.events.start('Test!'))
+    this.service.send(machineModel.events.start('Hello!'))
   }
 
 }

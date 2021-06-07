@@ -1,5 +1,6 @@
 import { createAction, props } from "@ngrx/store";
 
+//Actions are equivalent to events that the store listens for:
 export const startAction = '[Component] start'
 export const endAction = '[Component] end'
 

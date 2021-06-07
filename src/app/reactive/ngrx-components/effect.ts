@@ -4,6 +4,8 @@ import { map, mergeMap } from "rxjs/operators";
 import { TestService } from "src/app/services/test";
 import { end, startAction, StartPayload } from "./actions";
 
+//This will call the service, then map the response to
+//the end action for the store to consume:
 @Injectable()
 export class StartEffect {
     loadStart$ = createEffect(

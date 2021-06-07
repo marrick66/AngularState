@@ -15,7 +15,7 @@ export class ReactiveComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.store.dispatch(start({ value: "hello"}))
+    this.store.dispatch(start({ value: "Hello!"}))
   }
 
 }

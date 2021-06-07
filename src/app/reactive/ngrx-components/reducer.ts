@@ -4,6 +4,8 @@ import { ApplicationState } from "./appstate";
 
 const initialState = '';
 
+//This will take the end event and generate the next state by updating the
+//value field sent in the event:
 const valueReducer = createReducer(
     initialState,
     on(end, (_, payload) => 
